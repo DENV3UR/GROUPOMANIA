@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Posts Feed</title>
+  <script defer src="profil.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="profil.css">
+</head>
+
+<body>
+  <!-- Header --> 
+  <div class="bg-danger h-80">
+    <div class="container h-80">
+        <div class="row h-80 d-flex justify-content-between">
+            <nav class="col-3 navbar navbar-expand navbar-dark">
+                <img class='img-header' src='../../backend/images/icon-left-font-monochrome-black.svg'>
+            </nav>
+            <div class="d-flex justify-content-around">
+              <a class="col-1 navbar navbar-expand navbar-dark text-white" href="../postsView/postsFeed.html">Fil d'actualité</a>
+            <a class="col-1 navbar navbar-expand navbar-dark text-white" href="">Mon profil</a>
+            <a id="deco" class="col-1 navbar navbar-expand navbar-dark text-white" href="">Deconnexion</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container h-80 mt-5">
+  <form id="usr-form">
+    <div class="form-group">
+      <label for="surname">Prénom</label>
+      <input type="text" class="form-control" id="surname" placeholder="Prénom">
+    </div>
+    <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" class="form-control" id="name" placeholder="Nom">
+      </div>
+      <div class="form-group">
+        <label for="role">Mon poste</label>
+        <input type="text" class="form-control" id="role" placeholder="Mon poste">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <button id="del-user" type="button" class="btn btn-danger mt-4">Supprimer mon compte</button>
+</div>
+  
+</body>
