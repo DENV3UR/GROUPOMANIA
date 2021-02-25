@@ -12,6 +12,23 @@ body {
   background: #eee
 }
 
+.bg-dark-blue{
+  background-color: #16233F;
+  color: white;
+}
+
+.bg-red{
+  background-color: #C2595E;
+}
+
+.dark-blue{
+  color: #16233F;
+}
+
+.black{
+  color: black;
+}
+
 .date {
   font-size: 11px
 }

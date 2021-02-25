@@ -12,29 +12,29 @@
 
 <body>
   <!-- Header --> 
-  <div class="bg-danger h-80">
+  <div class="bg-red h-80">
     <div class="container h-80">
         <div class="row h-80 d-flex justify-content-between">
             <nav class="col-3 navbar navbar-expand navbar-dark">
-                <img class='img-header' src='../../backend/images/icon-left-font-monochrome-black.svg'>
+                <img alt='groupomania-logo' class='img-header' src='../../backend/images/icon-left-font-monochrome-black.svg'>
             </nav>
             <div class="d-flex justify-content-around">
-              <a class="col-1 navbar navbar-expand navbar-dark text-white" href="">Fil d'actualité</a>
-            <a class="col-1 navbar navbar-expand navbar-dark text-white" href="../profilView/profil.html">Mon profil</a>
-            <a id="deco" class="col-1 navbar navbar-expand navbar-dark text-white" href="">Deconnexion</a>
+              <a class="col-1 navbar navbar-expand navbar-dark black" href="">Fil d'actualité</a>
+            <a class="col-1 navbar navbar-expand navbar-dark black" href="../profilView/profil.html">Mon profil</a>
+            <a id="deco" class="col-1 navbar navbar-expand navbar-dark black" href="">Deconnexion</a>
           </div>
         </div>
     </div>
   </div>
 
-  <div class="bg-primary">
+  <div class="bg-dark-blue">
     <div class="container">
       <div class="row d-flex justify-content-center">
         <!--<h1>Poster un contenu</h1>-->
         <form id="post-form">
-          <input type="file" name="gif" id="gif-field" class="login-form-field">
+          <input type="file" name="gif" id="gif-field" aria-labelledby="gif-field" class="login-form-field">
           </br>
-          <textarea name="description" id="text-field" class="login-form-field" placeholder="Description" rows="5" cols="50"></textarea>
+          <textarea name="description" id="text-field" class="login-form-field" aria-labelledby="text-field" rows="5" cols="50"></textarea>
           </br>
           <input type="submit" value="post GIF" id="post-form-submit">
         </form>
@@ -50,8 +50,8 @@
         <div class="col-md-8 mb-5">
             <div class="d-flex flex-column comment-section">
                 <div class="bg-white p-2">
-                    <div class="d-flex flex-row user-info "><img class="rounded-circle" src="../../backend/images/user.jpeg" width="40">
-                        <div class="d-flex flex-column justify-content-start ml-2 mr-2"><span id="post-publisher" class="d-block font-weight-bold name">Marry Andrews</span><span id="post-date" class="date text-black-50 ">Shared publicly - Jan 2020</span></div>
+                    <div class="d-flex flex-row user-info "><img alt="user-photo" class="rounded-circle" src="../../backend/images/user.jpeg" width="40">
+                        <div class="d-flex flex-column justify-content-start ml-2 mr-2"><span id="post-publisher" class="d-block font-weight-bold dark-blue">Marry Andrews</span><span id="post-date" class="date text-black-50 ">Shared publicly - Jan 2020</span></div>
                         <div id="delete"><i class="bi bi-trash"></i></div><div id="del_usr"><i class="bi bi-person-x-fill"></i></div>
                     </div>
                     <div class="mt-2">
@@ -61,15 +61,15 @@
                 </div>
                 
                 <div id="comment_container" class="bg-light p-2">
-                    <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="../../backend/images/user.jpeg" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
-                    <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment<div id="publisher-id"></div> </button></div>
+                    <div class="d-flex flex-row align-items-start"><img alt="user-photo" class="rounded-circle" src="../../backend/images/user.jpeg" width="40"><textarea placeholder="Commentaire" id="comment-input" class="form-control ml-1 shadow-none textarea"></textarea></div>
+                    <div class="mt-2 text-right"><button class="btn btn-sm shadow-none bg-dark-blue" type="button">Post comment<div id="publisher-id"></div> </button></div>
                 </div>
             </div>
         </div>
       </template>
       <template id="comment">
-        <div class="d-flex flex-row user-info"><img class="rounded-circle" src="../../backend/images/user.jpeg" width="40">
-          <div class="d-flex flex-column justify-content-start ml-2"><span id="post-publisher" class="d-block font-weight-bold name mr-2">Marry Andrews</span><!--<span id="post-date" class="date text-black-50">Shared publicly - Jan 2020</span>--></div><div id="del_comm"><i class="bi bi-trash"></i></div><div id="del_user"><i class="bi bi-person-x-fill"></i></div>
+        <div class="d-flex flex-row user-info"><img alt="user-photo" class="rounded-circle" src="../../backend/images/user.jpeg" width="40">
+          <div class="d-flex flex-column justify-content-start ml-2"><span id="post-publisher" class="d-block font-weight-bold dark-blue mr-2">Marry Andrews</span><!--<span id="post-date" class="date text-black-50">Shared publicly - Jan 2020</span>--></div><div id="del_comm"><i class="bi bi-trash"></i></div><div id="del_user"><i class="bi bi-person-x-fill"></i></div>
         </div>
         <div class="mt-2">
           <p id="comment_text" class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

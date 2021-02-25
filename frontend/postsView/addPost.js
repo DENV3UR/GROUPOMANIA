@@ -95,8 +95,12 @@ async function renderPosts(posts){
             let del_post = clone.querySelector('#delete');
             let del_user = clone.querySelector('#del_usr');
             let publisher = clone.querySelector('#post-publisher');
+            let commentinput= clone.querySelector('#comment-input');
             let button = clone.querySelector('button[type="button"]');
             let text = clone.querySelector('textarea');
+
+            commentinput.setAttribute('aria-labelledby', post.id);
+
             text.setAttribute("id", post.id);
             const comm_container = clone.querySelector('#comment_container');
 
