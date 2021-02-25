@@ -100,7 +100,7 @@ async function renderPosts(posts){
             text.setAttribute("id", post.id);
             const comm_container = clone.querySelector('#comment_container');
 
-            if(localStorage.getItem('isadmin') == 0){
+            if(localStorage.getItem('isadmin') == 0 && localStorage.getItem('userId') != post.mainuserid){
                  del_post.style.display = 'none';
                  del_user.style.display = 'none';
             }
@@ -140,7 +140,7 @@ async function renderPosts(posts){
                 let comm_text = comm_clone.querySelector('#comment_text');
                 let del_com = comm_clone.querySelector('#del_comm');
                 let del_usr = comm_clone.querySelector('#del_user');
-                if(localStorage.getItem('isadmin') == 0) {
+                if(localStorage.getItem('isadmin') == 0 && localStorage.getItem('userId') != comments[1])  {
                     del_com.style.display = 'none';
                     del_usr.style.display = 'none';
                 }
